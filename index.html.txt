@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majuli Fish Pickle - Premium Assam Fish Pickle Online</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 1rem 0; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; }
+        nav a { color: #1e3c72; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+        nav a:hover { color: #ff6b35; }
+        .hero { background: linear-gradient(rgba(30,60,114,0.9), rgba(42,82,152,0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%232e7d32" width="1200" height="600"/><text x="50%" y="50%" font-size="60" fill="white" text-anchor="middle" dy=".3em">Majuli River Fish</text></svg>'); padding: 5rem 0; text-align: center; color: white; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.3rem; max-width: 600px; margin: 0 auto; }
+        .section { padding: 4rem 0; }
+        .products { background: #f8f9fa; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .product { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease; }
+        .product:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .product img { width: 100%; height: 250px; object-fit: cover; }
+        .product-info { padding: 1.5rem; }
+        .product h3 { color: #1e3c72; margin-bottom: 0.5rem; font-size: 1.4rem; }
+        .price { font-size: 2rem; font-weight: bold; color: #ff6b35; margin: 0.5rem 0; }
+        .buy-btn { background: linear-gradient(45deg, #ff6b35, #f7931e); color: white; border: none; padding: 1rem 2rem; border-radius: 50px; font-size: 1.1rem; font-weight: 600; cursor: pointer; width: 100%; transition: all 0.3s; }
+        .buy-btn:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(255,107,53,0.4); }
+        .features { background: white; text-align: center; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .feature { padding: 2rem; }
+        .feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+        footer { background: #1e3c72; color: white; text-align: center; padding: 3rem 0 1rem; }
+        .social-links { margin: 2rem 0; }
+        .social-links a { color: white; font-size: 1.5rem; margin: 0 1rem; transition: color 0.3s; }
+        .social-links a:hover { color: #ff6b35; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } nav ul { flex-direction: column; gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 style="margin:0; font-size:1.5rem;">🍗 Majuli Fish Pickle</h2>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Authentic Assam Fish Pickle</h1>
+            <p>Fresh river fish from Majuli, traditionally prepared with authentic spices. FSSAI certified, ready to ship across India.</p>
+        </div>
+    </section>
+
+    <section id="products" class="section products">
+        <div class="container">
+            <h2 style="text-align:center; font-size:2.5rem; color:#1e3c72; margin-bottom:1rem;">Our Premium Range</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1627342888056-5b1c5055f6f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Classic Fish Pickle" loading="lazy">
+                    <div class="product-info">
+                        <h3>Classic Fish Pickle</h3>
+                        <div class="price">₹250 <span style="font-size:1rem; color:#666;">200g</span></div>
+                        <button class="buy-btn" onclick="order('Classic 200g - ₹250')">Order Now</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Family Pack" loading="lazy">
+                    <div class="product-info">
+                        <h3>Family Pack</h3>
+                        <div class="price">₹550 <span style="font-size:1rem; color:#666;">500g (Save 10%)</span></div>
+                        <button class="buy-btn" onclick="order('Family Pack 500g - ₹550')">Order Now</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1571933569656-ea7757e6b4f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Premium Combo" loading="lazy">
+                    <div class="product-info">
+                        <h3>Premium Combo</h3>
+                        <div class="price">₹700 <span style="font-size:1rem; color:#666;">3x200g + Free Shipping</span></div>
+                        <button class="buy-btn" onclick="order('Premium Combo 3x200g - ₹700')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section features">
+        <div class="container">
+            <h2 style="text-align:center; font-size:2.5rem; color:#1e3c72; margin-bottom:1rem;">Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🥇</div>
+                    <h3>FSSAI Certified</h3>
+                    <p>Government licensed, food safety standards maintained</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Majuli river fish, traditional spices, no preservatives</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Assam-wide delivery within 2 days</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>PMMSY Supported</h3>
+                    <p>Pradhan Mantri Matsya Sampada Yojana beneficiary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div style="margin-bottom:2rem;">
+                <h3 style="font-size:1.8rem; margin-bottom:1rem;">Get In Touch</h3>
+                <p style="font-size:1.2rem; margin-bottom:1rem;">📱 <strong>+91-9678234567</strong></p>
+                <p>Majuli, Assam | FSSAI: 12345678901234</p>
+            </div>
+            <div class="social-links">
+                <a href="https://wa.me/919678234567">📱 WhatsApp</a>
+                <a href="https://facebook.com">📘 Facebook</a>
+                <a href="https://instagram.com">📷 Instagram</a>
+            </div>
+            <p style="margin-top:2rem; opacity:0.8;">© 2026 Majuli Fish Pickle | Powered by Assam Fisheries Department</p>
+        </div>
+    </footer>
+
+    <script>
+        function order(product) {
+            const phone = '9678234567'; // CHANGE TO YOUR NUMBER
+            const message = encodeURIComponent(`Hello! I want to order: ${product}\nFrom Majuli Fish Pickle website.`);
+            window.open(`https://wa.me/91${phone}?text=${message}`, '_blank');
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
